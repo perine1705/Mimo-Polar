@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <!-- Informações da página e arquivos usados nela. -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Mimo Polar: pelúcias natalinas para deixar seu Natal ainda mais especial."
+    />
+    <title>Início | Mimo Polar</title>
+    <link rel="icon" href="img/banners/logo.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@400;700&family=Open+Sans:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsavidade.css" />
+    <script src="js/produtos.js" defer></script>
+    <script src="js/script.js" defer></script>
+  </head>
+  <body class="home">
+    <!-- Menu do site e botões de música e neve. -->
+    <header class="cabecalho">
+      <a
+        class="marca"
+        href="index.html"
+        aria-label="Mimo Polar, página inicial"
+      >
+        <span class="marca-icone" aria-hidden="true">✳</span>
+        <span>Mimo <strong>Polar</strong></span>
+      </a>
+      <nav class="menu" aria-label="Navegação principal">
+        <a class="ativo" href="index.html" aria-current="page">Início</a>
+        <a href="produtos.html">Produtos</a>
+        <a href="galeria.html">Inspirações</a>
+        <a href="sobre.html">Sobre nós</a>
+        <a href="contato.html">Contato</a>
+      </nav>
+      <button class="botao-musica" id="btn-musica" type="button">
+        Ativar música
+      </button>
+      <button class="botao-neve" type="button" aria-pressed="true">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path
+            d="M12 2v20M4 7l16 10M4 17 20 7M8 3l4 3 4-3M8 21l4-3 4 3M3 11l4-1-1-4M21 13l-4 1 1 4M3 13l4 1-1 4M21 11l-4-1 1-4"
+          />
+        </svg>
+        <span data-texto-neve>Neve ligada</span>
+      </button>
+    </header>
+
+    <main>
+      <!-- Imagem de abertura com partes que se movem ao rolar a página. -->
+      <section class="parallax" id="fundo-parallax">
+        <img src="img/banners/pelucia.png" id="pelucia" alt="" />
+        <img src="img/banners/papainoel.png" id="papai" alt="" />
+        <img src="img/banners/logo.png" id="logos" alt="Mimo Polar" />
+      </section>
+
+      <!-- Boas-vindas e botão para ver os produtos. -->
+      <section class="sec animar-rolagem">
+        <h1>Bem-vindo à Mimo Polar!</h1>
+        <p>Descubra a magia do Natal com nossas pelúcias natalinas!</p>
+        <a class="botao-comprar-home" href="produtos.html#catalogo"
+          >Comprar agora</a
+        >
+      </section>
+
+      <!-- Quantos dias faltam para o Natal. -->
+      <section
+        class="contagem-home animar-rolagem"
+        aria-labelledby="titulo-contagem-home"
+      >
+        <div class="container">
+          <p class="sobretitulo">Falta pouco</p>
+          <h2 id="titulo-contagem-home">
+            Contagem regressiva para o Natal de 2026
+          </h2>
+          <div
+            class="contador-grande"
+            role="timer"
+            aria-label="Tempo restante até o Natal de 2026"
+            aria-live="off"
+          >
+            <div>
+              <span data-contagem="dias">0</span>
+              <p>Dias</p>
+            </div>
+            <div>
+              <span data-contagem="horas">00</span>
+              <p>Horas</p>
+            </div>
+            <div>
+              <span data-contagem="minutos">00</span>
+              <p>Min</p>
+            </div>
+            <div>
+              <span data-contagem="segundos">00</span>
+              <p>Seg</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Anúncios que passam um de cada vez; os botões mudam o anúncio. -->
+      <section
+        class="promo-secao animar-rolagem"
+        aria-labelledby="promo-titulo"
+      >
+        <div class="container1">
+          <div class="promo-cartao">
+            <h2 id="promo-titulo">Destaques da temporada</h2>
+
+            <div class="promo-slideshow" id="promo-slideshow">
+              <div class="promo-slide ativo">
+                <img
+                  src="img/produtos/pinguingorro.png"
+                  alt="pinguin de gorro"
+                />
+                <div class="promo-legenda">
+                  <h3>Pelúcias de vovós</h3>
+                  <p>Carinho e ternura para presentear quem você ama.</p>
+                </div>
+              </div>
+
+              <div class="promo-slide">
+                <img src="img/produtos/ursorosa.webp" alt="urso rosa" />
+                <div class="promo-legenda">
+                  <h3>Kit de pelúcias para a árvore</h3>
+                  <p>Decore sua árvore de Natal com fofura e alegria.</p>
+                </div>
+              </div>
+
+              <div class="promo-slide">
+                <img src="img/produtos/renafiilhote.png" alt="rena filhote " />
+                <div class="promo-legenda">
+                  <h3>Dupla de mini pelúcias</h3>
+                  <p>Pequenas, fofas e perfeitas para enfeitar a árvore.</p>
+                </div>
+              </div>
+
+              <div class="promo-slide">
+                <img src="img/produtos/urso-verde.webp" alt="Urso verde" />
+                <div class="promo-legenda">
+                  <h3>Urso marrom clássico de Natal</h3>
+                  <p>
+                    Aconchego para a temporada festiva e um amigo para abraçar.
+                  </p>
+                </div>
+              </div>
+
+              <div class="promo-slide">
+                <img src="img/produtos/baleia.png" alt="baleia de natal" />
+                <div class="promo-legenda">
+                  <h3>Urso inflável grande</h3>
+                  <p>Ideal para decorar a casa e criar um clima festivo.</p>
+                </div>
+              </div>
+              <button
+                class="promo-botao promo-anterior"
+                id="promo-anterior"
+                type="button"
+                aria-label="Slide anterior"
+              >
+                &#8249;
+              </button>
+              <button
+                class="promo-botao promo-proximo"
+                id="promo-proximo"
+                type="button"
+                aria-label="Próximo slide"
+              >
+                &#8250;
+              </button>
+            </div>
+
+            <div class="promo-indicadores" id="promo-indicadores"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Produtos escolhidos para aparecer em destaque na página inicial. -->
+      <section
+        class="home-destaques animar-rolagem"
+        aria-labelledby="titulo-destaques"
+      >
+        <div class="container">
+          <p class="sobretitulo">Feitos para presentear</p>
+          <h2 id="titulo-destaques">Mimos em destaque</h2>
+          <div
+            id="produtos-destaque"
+            class="grade-produtos"
+            aria-live="polite"
+          ></div>
+          <a class="botao-comprar-home" href="produtos.html#catalogo"
+            >Ver todos os produtos</a
+          >
+        </div>
+      </section>
+
+      <!-- Links para conhecer a loja, ver fotos e entrar em contato. -->
+      <section
+        class="home-links animar-rolagem"
+        aria-labelledby="titulo-conheca"
+      >
+        <div class="container">
+          <h2 id="titulo-conheca">Conheça a Mimo Polar</h2>
+          <div class="home-links-grade">
+            <a href="sobre.html"
+              ><strong>Nossa história</strong
+              ><span>Conheça a loja e a equipe por trás dos mimos.</span></a
+            >
+            <a href="galeria.html"
+              ><strong>Galeria de Natal</strong
+              ><span>Entre no clima com imagens da temporada.</span></a
+            >
+            <a href="contato.html"
+              ><strong>Fale com a gente</strong
+              ><span>Envie uma mensagem para nossa equipe.</span></a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Parte final da página, com links para outras áreas do site. -->
+    <footer class="rodape">
+      <div class="container rodape-conteudo">
+        <a class="marca marca-rodape" href="index.html"
+          >Mimo <strong>Polar</strong></a
+        >
+        <p>Pelúcias natalinas para deixar seu Natal ainda mais especial.</p>
+        <nav aria-label="Links do rodapé">
+          <a href="sobre.html">Nossa história</a>
+          <a href="contato.html">Fale com a gente</a>
+        </nav>
+        <small>&copy; 2026 Mimo Polar. Projeto acadêmico.</small>
+      </div>
+    </footer>
+  </body>
+</html>

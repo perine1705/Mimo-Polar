@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <!-- Informações da página e arquivos usados nela. -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Galeria de Natal | Mimo Polar</title>
+    <link rel="icon" href="img/banners/logo.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@400;700&family=Open+Sans:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsavidade.css" />
+    <script src="js/script.js" defer></script>
+  </head>
+  <body>
+    <!-- Menu do site e botões de música e neve. -->
+    <header class="cabecalho">
+      <a
+        class="marca"
+        href="index.html"
+        aria-label="Mimo Polar, página inicial"
+      >
+        <span class="marca-icone" aria-hidden="true">✳</span>
+        <span>Mimo <strong>Polar</strong></span>
+      </a>
+      <div class="contagem-header">
+        <span class="contagem-titulo">Natal 2026</span>
+        <div
+          class="contador"
+          role="timer"
+          aria-label="Tempo restante até o Natal de 2026"
+          aria-live="off"
+        >
+          <div>
+            <span id="dias">0</span>
+            <p>Dias</p>
+          </div>
+          <div>
+            <span id="horas">0</span>
+            <p>Horas</p>
+          </div>
+          <div>
+            <span id="minutos">0</span>
+            <p>Min</p>
+          </div>
+          <div>
+            <span id="segundos">0</span>
+            <p>Seg</p>
+          </div>
+        </div>
+      </div>
+      <nav class="menu" aria-label="Navegação principal">
+        <a href="index.html">Início</a>
+        <a href="produtos.html">Produtos</a>
+        <a class="ativo" href="galeria.html" aria-current="page">Inspirações</a>
+        <a href="sobre.html">Sobre nós</a>
+        <a href="contato.html">Contato</a>
+      </nav>
+      <button class="botao-musica" id="btn-musica" type="button">
+        Ativar música
+      </button>
+      <button class="botao-neve" type="button" aria-pressed="true">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path
+            d="M12 2v20M4 7l16 10M4 17 20 7M8 3l4 3 4-3M8 21l4-3 4 3M3 11l4-1-1-4M21 13l-4 1 1 4M3 13l4 1-1 4M21 11l-4-1 1-4"
+          />
+        </svg>
+        <span data-texto-neve>Neve ligada</span>
+      </button>
+      <a
+        class="atalho-carrinho"
+        href="produtos.html#catalogo"
+        aria-label="Abrir sacola de compras"
+      >
+        <svg class="icone-sacola" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M5 8h14l1 13H4L5 8Z" />
+          <path d="M9 8V6a3 3 0 0 1 6 0v2" />
+        </svg>
+        <span>Sacola</span>
+        <span class="contador-carrinho" data-qtd-carrinho>0</span>
+      </a>
+    </header>
+
+    <main class="galeria-pagina container">
+      <!-- Apresentação das fotos de Natal. -->
+      <section class="titulo-pagina">
+        <p class="sobretitulo">Inspire-se para o Natal</p>
+        <h1>Galeria de Natal</h1>
+        <p>
+          Um cantinho cheio de neve, pinheiros e magia para entrar no clima
+          natalino.
+        </p>
+      </section>
+
+      <!-- Fotos que passam uma de cada vez; os botões trocam a foto. -->
+      <section
+        class="galeria-slideshow"
+        aria-label="Galeria de imagens natalinas"
+        aria-roledescription="slideshow"
+      >
+        <div class="galeria-grade">
+          <figure class="galeria-item slide ativo" aria-hidden="false">
+            <div class="galeria-imagem">
+              <img
+                src="img/banners/coisas-de-natal.avif"
+                alt="coisas de natal com neve e luzes"
+              />
+            </div>
+            <figcaption>
+              Itens de Natal para celebrar o clima natalino.
+            </figcaption>
+          </figure>
+
+          <figure class="galeria-item slide" aria-hidden="true">
+            <div class="galeria-imagem">
+              <img src="img/produtos/triplo-t.png" alt="triple T" />
+            </div>
+            <figcaption>
+              Triple T com decoração de natal. O meme mais querido pelas
+              crianças.
+            </figcaption>
+          </figure>
+
+          <figure class="galeria-item slide" aria-hidden="true">
+            <div class="galeria-imagem">
+              <img
+                src="img/produtos/biscoito.png"
+                alt="biscoito de gengibre com decoração natalina"
+              />
+            </div>
+            <figcaption>
+              Biscoito de gengibre com decoração natalina.
+            </figcaption>
+          </figure>
+
+          <figure class="galeria-item slide" aria-hidden="true">
+            <div class="galeria-imagem">
+              <img
+                src="img/banners/cidade-natalina.avif"
+                alt="Cidade natalina com neve e luzes"
+              />
+            </div>
+            <figcaption>Cidade natalina com neve e luzes.</figcaption>
+          </figure>
+
+          <figure class="galeria-item slide" aria-hidden="true">
+            <div class="galeria-imagem">
+              <img
+                src="img/banners/papainoel.png"
+                alt="Papai Noel com presentes no cenário do banner"
+              />
+            </div>
+            <figcaption>Papai Noel com presentes.</figcaption>
+          </figure>
+
+          <figure class="galeria-item slide" aria-hidden="true">
+            <div class="galeria-imagem">
+              <img
+                src="img/banners/papainoelemacao.jpg"
+                alt="Papai Noel em ação com decoração natalina"
+              />
+            </div>
+            <figcaption>Papai Noel em ação!</figcaption>
+          </figure>
+
+          <figure class="galeria-item slide" aria-hidden="true">
+            <div class="galeria-imagem">
+              <img
+                src="img/produtos/casal-fofo.png"
+                alt="Casal de personagens de pelúcia com tema natalino"
+              />
+            </div>
+            <figcaption>
+              O casal mais fofo dos memes. Não é só o amor entre eles, é o amor
+              do Natal.
+            </figcaption>
+          </figure>
+        </div>
+
+        <div class="slides-controles">
+          <button id="anterior" type="button" aria-label="Ver imagem anterior">
+            Anterior
+          </button>
+          <span class="slides-contador" aria-hidden="true">1 de 7</span>
+          <button id="proximo" type="button" aria-label="Ver próxima imagem">
+            Próxima
+          </button>
+        </div>
+      </section>
+    </main>
+
+    <!-- Mostra maior a foto escolhida. -->
+    <dialog
+      id="galeria-lightbox"
+      class="galeria-lightbox"
+      aria-label="Imagem ampliada"
+    >
+      <button
+        class="lightbox-fechar"
+        type="button"
+        aria-label="Fechar imagem ampliada"
+      >
+        &times;
+      </button>
+      <img id="lightbox-imagem" alt="botao" />
+      <p id="lightbox-legenda"></p>
+    </dialog>
+
+    <!-- Quantos dias faltam para o Natal. -->
+    <section class="contagem-pag" aria-labelledby="titulo-contagem-pag">
+      <div class="container">
+        <p class="sobretitulo">Falta pouco</p>
+        <h2 id="titulo-contagem-pag">
+          Contagem regressiva para o Natal de 2026
+        </h2>
+        <div
+          class="contador-grande"
+          role="timer"
+          aria-label="Tempo restante até o Natal de 2026"
+          aria-live="off"
+        >
+          <div>
+            <span data-contagem="dias">0</span>
+            <p>Dias</p>
+          </div>
+          <div>
+            <span data-contagem="horas">00</span>
+            <p>Horas</p>
+          </div>
+          <div>
+            <span data-contagem="minutos">00</span>
+            <p>Min</p>
+          </div>
+          <div>
+            <span data-contagem="segundos">00</span>
+            <p>Seg</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Parte final da página, com links para outras áreas do site. -->
+    <footer class="rodape">
+      <div class="container rodape-conteudo">
+        <a class="marca marca-rodape" href="index.html"
+          >Mimo <strong>Polar</strong></a
+        >
+        <p>Pelúcias natalinas para deixar seu Natal ainda mais especial.</p>
+        <nav aria-label="Links do rodapé">
+          <a href="sobre.html">Nossa história</a>
+          <a href="contato.html">Fale com a gente</a>
+        </nav>
+        <small>&copy; 2026 Mimo Polar. Projeto acadêmico.</small>
+      </div>
+    </footer>
+  </body>
+</html>
