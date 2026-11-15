@@ -7,10 +7,11 @@ INTEGRANTES:
  - Rafael Yamakishi Klava 
  - Samuel Luz 
 
-LINKS:
+LINKS da base do projeto:
  Site (GitHub Pages): https://samuoluz-max.github.io/MimoPolar/
 
- Repositório (GitHub): https://github.com/samuoluz-max/MimoPolar
+ Repositório principal (GitHub): https://github.com/samuoluz-max/MimoPolar
+ Repositorio pessoa (GitHub): https://github.com/perine1705/Mimo-Polar
  
  Vídeo (YouTube): https://www.youtube.com/watch?v=vRm0OZT2Qfs
 
