@@ -8,12 +8,13 @@ INTEGRANTES:
  - Samuel Luz 
 
 LINKS da base do projeto:
- Site (GitHub Pages): https://samuoluz-max.github.io/MimoPolar/
+- Site principal (GitHub Pages): https://samuoluz-max.github.io/MimoPolar/
+- Site pessoal (GitHub Pages): https://perine1705.github.io/Mimo-Polar/
 
- Repositório principal (GitHub): https://github.com/samuoluz-max/MimoPolar
- Repositorio pessoa (GitHub): https://github.com/perine1705/Mimo-Polar
+- Repositório principal (GitHub): https://github.com/samuoluz-max/MimoPolar 
+- Repositorio pessoal (GitHub): https://github.com/perine1705/Mimo-Polar
  
- Vídeo (YouTube): https://www.youtube.com/watch?v=vRm0OZT2Qfs
+- Vídeo (YouTube): https://www.youtube.com/watch?v=vRm0OZT2Qfs
 
 RECURSOS DE JAVASCRIPT IMPLEMENTADOS (mínimo de 8):
  1. Slideshow - index.html e galeria.html
